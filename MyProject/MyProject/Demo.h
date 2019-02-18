@@ -7,17 +7,21 @@ public:
 		int column;
 		int value;
 	};
+	dividest divs[100];
 	int col;
-	int column;
-	const char *value ="yes";
 	char results;
 	char tb;
 	char fb;
-	dividest divs[100];
-	//char dividest(/*int rows, int column, char value*/);
-	void split_function();
-	void output();
-	const char *my_data[100][5] =
+	int column;
+	char value[100];
+	char *const a = value;
+	
+	void dividest();//拆分的列号以及参考值的输入
+	void split_function();//根据所给参考值进行拆分
+	void output();//输出满足条件的拆分列表
+	void outputmy_data();//输出原列表
+
+	char *const my_data[15][5] =
 	{
 	{ "slashdot","USA","yes","18","None" },
 	{ "google","France","yes","23","Premium" },
